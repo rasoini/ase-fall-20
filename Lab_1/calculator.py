@@ -15,6 +15,8 @@ def sum(m, n):
 
 
 def divide(m, n):
+	if n == 0:
+		raise ZeroDivisionError("Cannot divide by zero")
 	res = 0
 	mabs = abs(m)
 	nabs = abs(n)
